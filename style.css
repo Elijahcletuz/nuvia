@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+  }
+
+  header{
+    display: flex;
+    
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.heading{
+  color: #b30000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+
+}
+
+.heading h2{
+  padding-top: 15px;
+  font-size: 36px;
+}
+
+.about{
+  text-align: center;
+  padding-bottom: 25px;
+  line-height: 24px;
+}
+
+.form_one{
+  font-size: 1px;
+}
+
+input{
+  border: 0.1px solid rgb(162, 149, 149);
+}
+
+input, #sel_service{
+  width: 100%;
+  margin:4px 0px;
+  font-size: 16px;
+  font-weight: 400 !important;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+.button_large{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #b30000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+
+
+.ambassador{
+ text-align: center;
+ width: 100%;
+  
+}
+
+.ambassador img{
+  width: 100%;
+}
+
+.container_two{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container_two div:first-child {
+  text-align: center;
+}
+
+.container_two div:first-child h1{
+  color: #b30000;
+  font-size: 40px;
+}
+
+.container_two div:first-child p {
+  padding: 15px 0px 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.Package {
+  background-color: #f5c5c5;
+  padding: 24px 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Package h1{
+  font-weight: 600;
+
+}
+
+.Package p {
+  padding: 15px 0px;
+  font-size: 17px;
+}
+
+.details {
+  background-color: black;
+  color: white;
+  padding: 24px 25px 34px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details h1{
+  color: #f5c5c5;
+  font-weight: 600;
+}
+
+.copy {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.copy button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+.notice{
+  background-color: #f5c5c5;
+  color: #b30000;
+  font-weight: 600;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0px;
+  border-top: 1px solid black;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+  *{
+    padding: 0px 1px;
+  }
+
+  .ambassador img {
+    width: 96%;
+}
+
+  header {
+    padding: 25px 16px;
+}
+
+.container {
+  padding: 15px 20px 30px;
+  margin: auto;
+}
+
+.heading h2 {
+  padding-top: 60px;
+  font-size: 24px;
+}
+
+
+.heading p {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+
+.about {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+
+input, #sel_service {
+  margin: 6px 0px;
+  font-size: 14px;
+  padding: 12px 8px;
+  
+}
+
+.button_large {
+  font-size: 14px;
+  font-weight: 600;
+  padding:15px  10px ;
+  margin-top: 5px;
+}
+
+.container_two div:first-child h1 {
+  font-size: 26px;
+}
+
+.container_two {
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.container_two div:first-child p {
+  padding: 10px 0px 12px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.copy {
+  display: block;
+}
+
+.copy p{
+  padding-bottom: 4px;
+}
+
+.copy button {
+  padding: 3px 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Package p {
+  padding: 14px 0px;
+  font-size: 14px;
+}
+
+.Package h1, .details h1 {
+  font-size: 23px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  border-top: 1px solid black;
+}
+
+.submit{
+  margin-bottom: 40px;
+}
+
+
+}

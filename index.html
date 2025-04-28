@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuviaregistration</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2> NUVIA</h2>
+        <div> <img src="/menu_icon.svg" alt=""></div>
+    </header>
+
+    <div class="container">
+        <div class="heading">
+            <h2>NUVIA N-COIN </h2>
+            <p>Purchase</p>
+            
+        </div>
+    
+        <div class="about">
+            Get your NUVIA N COIN with a one-time payment of 7500 (Basic Package) or 12,500 (Premium Package). Your N Coin and login details would be sent to your email.
+        </div>
+    
+        <form action="" class="form_one">
+            <div class="form_item">
+                <input type="text" id="name" name="name"  placeholder="First Name" required>   
+                <input type="text" id="name" name="name"  placeholder="Last Name" required> 
+                <input type="email" id="email" name="email"  placeholder="Email" required> 
+            </div>
+    
+            <div class="form_item select_items">
+                <select name="Select Package" id="sel_service"  required>
+                    <option value="" disabled selected id="Select Package">-Select Package-</option>
+                    <option value="" id="sel-services">Basic Package - 7,500</option>
+                    <option value="" id="sel-services">Premium Package - 12,500</option>
+    
+                </select>
+            </div>
+    
+            <button class="button_large submit"> Submit</button>
+        </form>
+    </div>
+
+    <div class="page2">
+        <div class="ambassador"><img src="image.jpg" alt=""></div>
+
+        <div class="container_two">
+            <div>
+                <h1>Get Your N Coin</h1>
+                <p>You are to get your N COIN only through our verified vendor with details below, make your payment to the account below ⤵️</p>
+            </div>
+    
+            <div class="Package">
+                <h1>Package Options</h1>
+                <p>Premium Package – 12,500 NAIRA</p>
+                <p>Basic Package – 7,500 NAIRA</p>
+            </div>
+    
+            <div class="details">
+                <h1>Account Details</h1>
+                <div class="copy">
+                    <p>Account Number: 7069655096 </p>
+                    <button>copy</button>
+                </div>
+                <p>Bank: Moniepoint</p>
+                <p>Account Name: IDARESIT PETER (TrustIdy VENTURES)</p>
+            </div>
+    
+            <div class="notice">
+                AFTER PAYMENT, CLICK THE LINK BELOW TO GET YOUR NUVIA PIN AND LOGIN DETAILS SENT TO YOUR EMAIL.
+            </div>
+    
+            <button  class="button_large submit-button">Submit Proof of Payment</button>
+    
+        </div>
+        </div>
+        
+
+    <footer>
+        Copyright © 2025 NUVIA
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.form_one');
+            const page2 = document.querySelector('.page2');
+            const container = document.querySelector('.container');
+            const copyButton = document.querySelector('.copy button');
+            const accountNumber = '7069655096'; // Account number to copy
+            const submitButton = document.querySelector('.submit-button'); // Select the button with the new class
+    
+            // Hide the second page initially
+            page2.style.display = 'none';
+    
+            // Handle the form submission
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                // Hide the first container and show the second page
+                container.style.display = 'none';
+                page2.style.display = 'block';
+            });
+    
+            // Handle button click to redirect
+            submitButton.addEventListener('click', function() {
+                window.location.href = 'https://wa.link/vhdjjp'; // Redirect to the URL
+            });
+    
+            // Copy account number to clipboard using textarea
+            copyButton.addEventListener('click', function() {
+                // Create a temporary textarea element
+                const textarea = document.createElement('textarea');
+                textarea.value = accountNumber; // Set the account number to the textarea
+                document.body.appendChild(textarea); // Append it to the body
+                textarea.select(); // Select the text
+                try {
+                    const successful = document.execCommand('copy'); // Copy the text
+                    const msg = successful ? 'Account number copied' : 'Failed to copy!';
+                    alert(msg);
+                } catch (err) {
+                    console.error('Could not copy text: ', err);
+                }
+                document.body.removeChild(textarea); // Remove the textarea element
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
