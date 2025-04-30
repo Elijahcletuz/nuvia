@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 25px;
+    padding: 25px 25px;
 }
 
 .container {
@@ -178,7 +178,7 @@ footer {
   width: 100%;
   text-align: center;
   padding: 40px 0px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(178, 175, 175);
 }
 
 
@@ -280,11 +280,15 @@ footer {
   width: 100%;
   text-align: center;
   padding: 20px 0px;
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(178, 175, 175);
 }
 
 .submit{
   margin-bottom: 40px;
+}
+
+.last{
+  margin-bottom: 20px; 
 }
 
 
