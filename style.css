@@ -243,6 +243,9 @@ input, #sel_service {
 
 .container_two div:first-child h1 {
   font-size: 26px;
+  width: 78%;
+  margin: auto;
+  text-align: center;
 }
 
 .container_two {
