@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 25px;
+    padding: 20px 25px;
 }
 
 .container {
@@ -32,7 +32,7 @@
 }
 
 .heading{
-  color: #b30000;
+  color: #0cb300;
   text-align: center;
   margin-bottom: 20px;
   font-size: 36px;
@@ -49,6 +49,7 @@
   text-align: center;
   padding-bottom: 25px;
   line-height: 24px;
+  font-size: 16px;
 }
 
 .form_one{
@@ -73,12 +74,25 @@ input, #sel_service{
   width: 100%;
   font-size: 16px;
   font-weight: 700;
-  background-color: #b30000;
+  background-color: #0cb300;
   color: white;
   padding: 12px;
   border: none;
   border-radius: 5px;
   margin-top: 7px;
+}
+
+.subscribe {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #0cb300;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+
 }
 
 
@@ -109,7 +123,7 @@ input, #sel_service{
 }
 
 .container_two div:first-child h1{
-  color: #b30000;
+  color: #0cb300;
   font-size: 40px;
 }
 
@@ -120,20 +134,22 @@ input, #sel_service{
 }
 
 .Package {
-  background-color: #f5c5c5;
-  padding: 24px 25px 40px;
+  background-color: #000000;
+  color: white;
+  padding: 24px 25px 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Package h1{
   font-weight: 600;
+  font-size: 16px;
 
 }
 
 .Package p {
   padding: 15px 0px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .details {
@@ -144,11 +160,12 @@ input, #sel_service{
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin: 10px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .details h1{
-  color: #f5c5c5;
+  color: #0cb300;
   font-weight: 600;
 }
 
@@ -156,6 +173,10 @@ input, #sel_service{
   display: flex;
   gap: 30px;
   align-items: center;
+}
+
+.page3{
+  padding: 20px 30px;
 }
 
 .copy button {
@@ -168,14 +189,25 @@ input, #sel_service{
   border-radius: 5px;
 }
 
-.notice{
-  background-color: #f5c5c5;
-  color: #b30000;
-  font-weight: 600;
-  padding: 20px 10px;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.proceed{
+   font-size: 16px;
+   padding: 20px 0px 30px;
+
+}
+
+.submit-button{
+  color: white;
+}
+
+.notice {
+    background-color: #fff;
+    color: #000000;
+    font-weight: 600;
+    padding: 30px 10px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -238,7 +270,28 @@ input, #sel_service {
   font-size: 14px;
   font-weight: 600;
   padding:15px  10px ;
-  margin-top: 5px;
+  margin-top: 15px;
+}
+
+.subscribe{
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.details h1{
+  font-size: 24px;
+}
+
+.notice{
+  font-size: 14px;
+  margin: 30px 0px 10px;
+}
+
+.proceed{
+          font-size: 16px;
+        padding: 20px 0px 30px;
+
 }
 
 .container_two div:first-child h1 {
@@ -248,10 +301,17 @@ input, #sel_service {
   text-align: center;
 }
 
+.Package h1{
+  font-weight: 600;
+  font-size: 20px;
+
+}
+
+
 .container_two {
   font-size: 14px;
   margin: 10px auto;
-  padding: 20px;
+  padding: 22px;
 }
 
 .container_two div:first-child p {
@@ -275,13 +335,10 @@ input, #sel_service {
 }
 
 .Package p {
-  padding: 14px 0px;
+  padding: 10px 0px 0px;
   font-size: 14px;
 }
 
-.Package h1, .details h1 {
-  font-size: 23px;
-}
 
 footer {
   width: 100%;

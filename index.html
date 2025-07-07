@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h2> NUVIA</h2>
+        <h2> V-app</h2>
         <div class="menu_icon"><a href="/index.html"><img src="/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt=""></a> </div>
         
     </header>
@@ -20,13 +20,13 @@
 
     <div class="container">
         <div class="heading">
-            <h2>NUVIA N-COIN </h2>
+            <h2>V COIN </h2>
             <p>Purchase</p>
             
         </div>
     
         <div class="about">
-            Get your NUVIA N COIN with a one-time payment of 7500 (Basic Package) or 12,500 (Premium Package). Your N Coin and login details would be sent to your email.
+            Get your V COIN with a one-time payment of 9,000 (V-app Lite) or 14,000 (v-app Plus). Your V Coin and login details would be sent to your email.
         </div>
     
         <form action="" class="form_one">
@@ -39,99 +39,126 @@
             <div class="form_item select_items">
                 <select name="Select Package" id="sel_service"  required>
                     <option value="" disabled selected id="Select Package">-Select Package-</option>
-                    <option value="" id="sel-services">Basic Package - 7,500</option>
-                    <option value="" id="sel-services">Premium Package - 12,500</option>
+                    <option value="" id="sel-services">V-app Lite - 9,000</option>
+                    <option value="" id="sel-services">V-app Plus - 14,000</option>
     
                 </select>
             </div>
     
-            <button class="button_large submit"> Submit</button>
+            <button class="button_large submit"> NEXT</button>
         </form>
     </div>
 
     <div class="page2">
-        <div class="ambassador"><img src="image.jpg" alt=""></div>
+        <div class="ambassador"><img src="VCOIN.jpg" alt=""></div>
 
         <div class="container_two">
             <div>
-                <h1>PURCHASE YOUR N-COIN</h1>
-                <p>You are to Purchase your N-Coin only through a Verified  Merchant  with the details Below.Make your Payment Below ⤵️</p>
+                <h1>PURCHASE YOUR V-COIN</h1>
+                <p>Click any of your preferred package to subscribe Your Logins will be activated immediately after payment ⤵️</p>
+            </div>
+
+            
+            <div class="Package">
+                <h1>V-app Lite</h1>
+                <p> Package Price: 9,000 NAIRA</p>
+                <button class="subscribe"> Subscribe </button>
             </div>
     
             <div class="Package">
-                <h1>Package Options</h1>
-                <p>Premium Package – 12,500 NAIRA</p>
-                <p>Basic Package – 7,500 NAIRA</p>
+                <h1>V-app Plus</h1>
+                <p> Package Price: 14,000 NAIRA</p>
+                <button class="subscribe"> Subscribe </button>
             </div>
     
-            <div class="details">
+        </div>
+
+        <div class="page3">
+
+            <h3 class="proceed">PROCEED TO YOUR BANK TO COMPLETE THIS TRANSFER</h3>
+
+
+             <div class="details">
                 <h1>Account Details</h1>
                 <div class="copy">
-                    <p>Account Number: 2283715440 </p>
+                    <p>Account Number: 3046240189 </p>
                     <button>copy</button>
                 </div>
-                <p>Bank: UBA (UNITED BANK OF AFRICA)</p>
-                <p>Account Name: IDARESIT PETER (TrustIdy VENTURES)</p>
+                <p>Bank: FAIRMONEY MFB</p>
+                <p>Account Name: IDARASIT EBOSE </p>
             </div>
     
             <div class="notice">
-                AFTER PAYMENT, CLICK THE LINK BELOW TO GET YOUR NUVIA PIN AND LOGIN DETAILS SENT TO YOUR EMAIL.
+                AFTER PAYMENT, CLICK THE LINK BELOW TO GET YOUR V-COIN AND LOGIN DETAILS SENT TO YOUR EMAIL.
             </div>
-    
-            <button  class="button_large last submit-button">Submit Proof of Payment</button>
-    
+
+            <button  class="button_large last submit-button">SUBMIT PROOF OF PAYMENT</button>
         </div>
         </div>
         
 
     <footer>
-        Copyright © 2025 NUVIA
+        Copyright © 2025 V COIN
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.form_one');
-            const page2 = document.querySelector('.page2');
-            const container = document.querySelector('.container');
-            const copyButton = document.querySelector('.copy button');
-            const accountNumber = '2283715440'; // Account number to copy
-            const submitButton = document.querySelector('.submit-button'); // Select the button with the new class
-    
-            // Hide the second page initially
-            page2.style.display = 'none';
-    
-            // Handle the form submission
-            form.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent the default form submission
-                
-                // Hide the first container and show the second page
-                container.style.display = 'none';
-                page2.style.display = 'block';
-            });
-    
-            // Handle button click to redirect
-            submitButton.addEventListener('click', function() {
-                window.location.href = 'https://wa.link/vhdjjp'; // Redirect to the URL
-            });
-    
-            // Copy account number to clipboard using textarea
-            copyButton.addEventListener('click', function() {
-                // Create a temporary textarea element
-                const textarea = document.createElement('textarea');
-                textarea.value = accountNumber; // Set the account number to the textarea
-                document.body.appendChild(textarea); // Append it to the body
-                textarea.select(); // Select the text
-                try {
-                    const successful = document.execCommand('copy'); // Copy the text
-                    const msg = successful ? 'Account number copied' : 'Failed to copy!';
-                    alert(msg);
-                } catch (err) {
-                    console.error('Could not copy text: ', err);
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('.form_one');
+        const page2 = document.querySelector('.page2');
+        const container = document.querySelector('.container');
+        const page3 = document.querySelector('.page3');
+        const copyButton = document.querySelector('.copy button');
+        const accountNumber = '3046240189';
+        const submitButton = document.querySelector('.submit-button');
+        const subscribeButtons = document.querySelectorAll('.subscribe');
+
+        // Initially hide page2 and page3
+        page2.style.display = 'none';
+        page3.style.display = 'none';
+
+        // Show page2 when form is submitted
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            container.style.display = 'none';
+            page2.style.display = 'block';
+            page3.style.display = 'none'; // Make sure page3 stays hidden at this point
+        });
+
+        // When a subscribe button is clicked
+        subscribeButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Only show page3 inside page2
+                const allPage2Children = page2.children;
+                for (let i = 0; i < allPage2Children.length; i++) {
+                    allPage2Children[i].style.display = 'none'; // Hide all children
                 }
-                document.body.removeChild(textarea); // Remove the textarea element
+                page3.style.display = 'block'; // Then show only page3
             });
         });
-    </script>
+
+        // Copy to clipboard logic
+        copyButton.addEventListener('click', function () {
+            const textarea = document.createElement('textarea');
+            textarea.value = accountNumber;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                alert('Account number copied');
+            } catch (err) {
+                console.error('Copy failed: ', err);
+                alert('Failed to copy!');
+            }
+            document.body.removeChild(textarea);
+        });
+
+        // Redirect after payment confirmation
+        submitButton.addEventListener('click', function () {
+            window.location.href = 'https://wa.link/y3ljo7';
+        });
+    });
+</script>
+
     
     
 </body>
