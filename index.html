@@ -20,13 +20,13 @@
 
     <div class="container">
         <div class="heading">
-            <h2>V COIN </h2>
+            <h2>V-COIN </h2>
             <p>Purchase</p>
             
         </div>
     
         <div class="about">
-            Get your V COIN with a one-time payment of 9,000 (V-app Lite) or 14,000 (v-app Plus). Your V Coin and login details would be sent to your email.
+            Get your V-COIN with a one-time payment of 9,000 (V-App Lite) or 14,000 (V-App Plus). Your V-Coin and login details would be sent to your email.
         </div>
     
         <form action="" class="form_one">
@@ -60,7 +60,7 @@
 
             
             <div class="plan">
-                <button class="subscribe"> Subscribe to Lite: N9,000 </button>
+                <button class="subscribe sub"> Subscribe to Lite: N9,000 </button>
                 <p>limited Daily streams</p>
             </div>
     
@@ -87,7 +87,7 @@
                     <button>copy</button>
                 </div>
                 <p>Bank: FAIRMONEY MFB</p>
-                <p>Account Name: IDARASIT EBOSE </p>
+                <p>Account Name: IDARAESIT EBOESE </p>
             </div>
     
             <div class="notice">
@@ -97,13 +97,16 @@
             <button  class="button_large last submit-button">SUBMIT PROOF OF PAYMENT</button>
         </div>
         </div>
+
+        <div id="copyPrompt" class="copy-prompt">Copied!</div>
+
         
 
     <footer>
-        Copyright © 2025 V COIN
+        Copyright © 2025 V-COIN
     </footer>
 
-    <script>
+    <!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
         const form = document.querySelector('.form_one');
         const page2 = document.querySelector('.page2');
@@ -156,12 +159,77 @@
 
         // Redirect after payment confirmation
         submitButton.addEventListener('click', function () {
-            window.location.href = 'https://wa.link/y3ljo7';
+            window.location.href = 'https://tr.ee/V-APP';
         });
     });
 </script>
 
     
     
-</body>
+ -->
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('.form_one');
+        const page2 = document.querySelector('.page2');
+        const container = document.querySelector('.container');
+        const page3 = document.querySelector('.page3');
+        const copyButton = document.querySelector('.copy button');
+        const accountNumber = '3046240189';
+        const submitButton = document.querySelector('.submit-button');
+        const subscribeButtons = document.querySelectorAll('.subscribe');
+
+        // Initially hide page2 and page3
+        page2.style.display = 'none';
+        page3.style.display = 'none';
+
+        // Show page2 when form is submitted
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            container.style.display = 'none';
+            page2.style.display = 'block';
+            page3.style.display = 'none'; // Make sure page3 stays hidden at this point
+        });
+
+        // When a subscribe button is clicked
+        subscribeButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                // Only show page3 inside page2
+                const allPage2Children = page2.children;
+                for (let i = 0; i < allPage2Children.length; i++) {
+                    allPage2Children[i].style.display = 'none'; // Hide all children
+                }
+                page3.style.display = 'block'; // Then show only page3
+            });
+        });
+
+        // Copy to clipboard logic with button text change
+        copyButton.addEventListener('click', function () {
+            const textarea = document.createElement('textarea');
+            textarea.value = accountNumber;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                copyButton.textContent = 'Copied!';
+                copyButton.disabled = true;
+                setTimeout(() => {
+                    copyButton.textContent = 'Copy';
+                    copyButton.disabled = false;
+                }, 2000);
+            } catch (err) {
+                console.error('Copy failed: ', err);
+            }
+            document.body.removeChild(textarea);
+        });
+
+        // Redirect after payment confirmation
+        submitButton.addEventListener('click', function () {
+            window.location.href = 'https://tr.ee/V-APP';
+        });
+    });
+</script>
+
+
+ </body>
 </html>

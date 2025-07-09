@@ -86,6 +86,7 @@ input, #sel_service{
     text-align: center;
     padding: 10px 0px 0px;
     font-size: 14px;
+    font-weight: 700;
 }
 
 .subscribe {
@@ -98,7 +99,31 @@ input, #sel_service{
   border: none;
   border-radius: 5px;
   margin-top: 1px;
+}
 
+.copy-prompt {
+  display: none;
+  position: fixed;
+  top: 275px;
+  left: 70%;
+  transform: translateX(-50%);
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.copy-prompt.show {
+  display: block;
+  opacity: 1;
+}
+
+
+.sub{
+  background-color: #1c301a;
 }
 
 .recommended{
@@ -199,6 +224,8 @@ input, #sel_service{
   border: none;
   border-radius: 5px;
 }
+
+
 
 .proceed{
    font-size: 16px;
